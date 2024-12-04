@@ -18,3 +18,5 @@ Since this tone dominates the Oscilloscope, the FFT view is used to find the ton
 It turns out that this tone sits at **630 Hz** as expected, and has a second harmonic at **1258 Hz**
 
 It can be seen that the **630 Hz** tone compared to the **764 kHz** tone has significantly lower amplitude (-37 dB). In order to understand if the strong non-hearable tone is in fact the source of the weaker hearable tone a simple RC filter is designed and connected in parallell to the speaker.  
+
+It can be seen alreayd on the first oscilloscope screenshot at the top of this page that there might be both some amplitude modulation and phase modulation on the **764 kHz** carrier. Since my scope cannot demodulate that, the signal was captured with an SDR.
