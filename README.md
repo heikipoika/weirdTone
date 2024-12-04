@@ -1,13 +1,18 @@
 # weirdTone
-Project to understand the weird noise tone
+## A project to understand the weird noise tone from my stereo
+
 Suddenly a weird tone started to sound out of my HiFi receiver and speaker setup.
 
 Connecting a oscilloscope to the speaker input port revealed a strange static sine wave coming out of the receiver:
 
 ![](noise_time.bmp)
 
-However, it can be seen that this tone is at **700 kHz** far beyond the maximum frequency that humans can hear.
+However, it can be seen that this tone is at **764 kHz** which is far beyond the maximum frequency that humans can hear.
 
-Since this tone dominates the Oscilloscope, a FFT view is used to find the tone that can be heard.
+Since this tone dominates the Oscilloscope, the FFT view is used to find the tone that can be heard.
 
 ![](audio_tone.bmp)
+
+It turns out that this tone sits at **630 Hz** as expected, and has a second harmonic at **1258 Hz**
+
+It can be seen that the **630 Hz** tone compared to the **764 kHz** tone has significantly lower amplitude (-37 dB). In order to understand if the strong non-hearable tone is in fact the source of the weaker hearable tone a simple RC filter is designed and connected in parallell to the speaker.  
