@@ -1,7 +1,9 @@
 # weirdTone
 ## A project to understand the weird noise tone from my stereo
 
-Suddenly a weird tone started to sound out of my HiFi receiver and speaker setup.
+Suddenly a weird tone started to sound out of my HiFi receiver and speaker setup. [noise.wav](noise.wav)
+
+Running the recorded audio through a spectrum analyzer tells us it has a frequency of round about **600 Hz**
 
 Connecting a oscilloscope to the speaker input port revealed a strange static sine wave coming out of the receiver:
 
