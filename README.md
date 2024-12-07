@@ -3,6 +3,12 @@
 
 Suddenly a weird tone started to sound out of my HiFi receiver and speaker setup. [audio_rec.m4a](audio_rec.m4a)
 
+
+
+https://github.com/user-attachments/assets/981a4032-a31b-44b6-8024-6007ced8d948
+
+
+
 Running the recorded audio through a spectrum analysis in matlab tells us it has a frequency of round about **600 Hz**
 
 https://github.com/user-attachments/assets/0ce64762-7b6c-4f80-abbe-c0fdd27a3ffb
