@@ -5,7 +5,7 @@ Suddenly a weird tone started to sound out of my HiFi receiver and speaker setup
 
 Running the recorded audio through a spectrum analysis in matlab tells us it has a frequency of round about **600 Hz**
 
-![audio_record](audio_record.m4v)
+![audio_record](audio_record.mp4)
 
 Connecting a oscilloscope to the speaker input port revealed a strange static sine wave coming out of the receiver:
 
