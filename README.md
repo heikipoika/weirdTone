@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/981a4032-a31b-44b6-8024-6007ced8d948
 
 Running the recorded audio through a spectrum analysis in matlab tells us it has a frequency of round about **600 Hz**
 
-![](audio_spectrum.png)
+![](audio_spec.png)
 
 Connecting a oscilloscope to the speaker input port revealed a strange static sine wave coming out of the receiver:
 
