@@ -25,4 +25,12 @@ It can be seen that the **630 Hz** tone compared to the **764 kHz** tone has sig
 
 ![](filter.png)
 
-It can be seen alreayd on the first oscilloscope screenshot almost at the top of this page that there might be both some amplitude modulation and phase modulation on the **764 kHz** carrier. This is also reflected in the frequency domain, where the bandwidth of the signals seems to be some kHz. Since my scope cannot demodulate signals, the signal was captured with an SDR.
+Now, it can be seen that the 630Hz tone is removed by the filter even though the filters cutoff freqyency is way above in frequency. This leads us to suspect that the **630 Hz** tone is somehow related to the **764 kHz** tone.
+
+![](noise_tone_amplitude_filt.bmp)
+
+It can be seen alreayd on the first oscilloscope screenshot almost at the top of this page that there might be both some amplitude modulation and phase modulation on the **764 kHz** carrier. This is also reflected in the frequency domain, where the bandwidth of the signals seems to be some kHz. 
+
+![](spectrum_when_noise.bmp)
+
+Since my scope cannot demodulate signals, the signal was captured with an SDR.
