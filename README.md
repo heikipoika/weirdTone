@@ -21,16 +21,16 @@ Since this tone dominates the Oscilloscope, the FFT view is used to find the ton
 
 It turns out that this tone sits at **630 Hz** as expected, and has a second harmonic at **1258 Hz**
 
-It can be seen that the **630 Hz** tone compared to the **764 kHz** tone has significantly lower amplitude (-37 dB). In order to understand if the strong non-hearable tone is in fact the source of the weaker hearable tone a simple RC low pass filter with -3dB cutoff at 16 kHz is designed and connected in parallell to the speaker. See LT-spice image:
+It was determined that the **630 Hz** tone compared to the **764 kHz** tone has significantly lower amplitude (-37 dB). In order to understand if the strong non-hearable tone is in fact the source of the weaker hearable tone a simple RC low pass filter with -3dB cutoff at 16 kHz is designed and connected in parallell to the speaker. See LT-spice image:
 
 ![](filter.png)
 
-Now, it can be seen that the 630Hz tone is removed by the filter even though the filters cutoff freqyency is way above in frequency. This leads us to suspect that the **630 Hz** tone is somehow related to the **764 kHz** tone.
+Now, it can be seen that the **630 Hz** tone is removed by the low pass filter even though the filters cutoff freqyency is way above **630 Hz**. This leads us to suspect that the **630 Hz** tone is somehow carried by the **764 kHz** tone.
 
 ![](noise_tone_amplitude_filt.bmp)
 
-It can be seen alreayd on the first oscilloscope screenshot almost at the top of this page that there might be both some amplitude modulation and phase modulation on the **764 kHz** carrier. This is also reflected in the frequency domain, where the bandwidth of the signals seems to be some kHz. 
+It is seen alreayd on the first oscilloscope screenshot almost at the top of this page that there might be both some amplitude modulation and phase modulation on the **764 kHz** carrier. This is also reflected in the frequency domain, where the bandwidth of the signals seems to increase when the tone sounds, campared to when it doesn't (that's right! it's not always there). 
 
 ![](spectrum_when_noise.bmp)
 
-Since my scope cannot demodulate signals, the signal was captured with an SDR.
+Since my scope cannot demodulate signals, the signal needs to be captured with my SDR.
